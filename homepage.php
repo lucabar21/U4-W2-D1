@@ -18,7 +18,7 @@ include_once __DIR__ . "/includes/initial.php";
         Welcome <?= isset($user_logged) ? $user_logged['username'] : "" ?>
     </div>
     <div class="d-flex justify-content-center"><a href="index.php"><button type="button"
-                class="btn btn-danger">Logout</button></a>
+                onclick="<?= session_destroy(); ?> " class="btn btn-danger">Logout</button></a>
     </div>
 </div>
 
