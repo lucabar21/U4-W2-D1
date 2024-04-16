@@ -1,5 +1,6 @@
 <?php
-include_once __DIR__ . "/includes/initial.php";
+
+include_once __DIR__ . "/includes/init.php";
 
 $username = $_POST['username'] ?? '';
 
@@ -9,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $user_logged = $stmt->fetch();
 }
+include_once __DIR__ . "/includes/initial.php";
 ?>
 
 <div class="col-8">
